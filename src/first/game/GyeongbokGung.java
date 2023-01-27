@@ -2,16 +2,15 @@ package first.game;
 
 import java.util.Scanner;
 
-public class AmusmentPark {
-public static void amusmentPart(Total total) {
-		
-   
+public class GyeongbokGung {
+	
+	public static void gyeongbokGung(Total total) {
 		int score1 = 0;
 		int score2 = 0;
 		int score3 = 0;
 		int score4 = 0;
 		int totalScore = 0;
-		
+	
 		Scanner sc = new Scanner(System.in);
 		
 		String[] hair = {"댕기머리", "털모자", "밀짚모자", "머리띠", "헬멧"};
@@ -19,17 +18,16 @@ public static void amusmentPart(Total total) {
 		String[] shoes = {"꽃신", "스키부츠", "쪼리", "운동화", "레이싱부츠"};
 		String[] prop = {"부채", "스키장갑", "튜브", "솜사탕", "레이싱글러브"};
 		
-		
-		System.out.println("슈의 놀이공원 데이트 의상을 뽑아주세요.");
+		System.out.println("슈의 경복궁 데이트 의상을 뽑아주세요.");
 		System.out.println("모든 선택은 '1'버튼으로 진행됩니다.");
 		
-		System.out.print("헤어스타일 : ");
+		System.out.println("헤어스타일 : ");
 		int no1 = sc.nextInt();
 		if (no1 == 1) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (hair.length -1));
 			System.out.println("'" + hair[num] + "'이(가) 뽑혔습니다.");	
-			if (num == 3) {
+			if (num == 0) {
 				score1 = 25;
 			}else {
 				score1 = 10;
@@ -43,7 +41,7 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (clothes.length -1));
 			System.out.println("'" + clothes[num] + "'이(가) 뽑혔습니다.");
-			if (num == 3) {
+			if (num == 0) {
 				score2 = 25;
 			}else {
 				score2 = 10;
@@ -55,7 +53,7 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (shoes.length -1));
 			System.out.println("'" + shoes[num] + "'이(가) 뽑혔습니다.");
-			if (num == 3) {
+			if (num == 0) {
 				score3 = 25;
 			}else {
 				score3 = 10;
@@ -67,7 +65,7 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (prop.length -1));
 			System.out.println("'" + prop[num] + "'이(가) 뽑혔습니다.");
-			if (num == 3) {
+			if (num == 0) {
 				score4 = 25;
 			}else {
 				score4 = 10;
@@ -76,6 +74,8 @@ public static void amusmentPart(Total total) {
 			
 		totalScore = score1 + score2 + score3 + score4;
 		
+	
+	
 		System.out.println("======================");
 		System.out.println("슈의 데이트 복장 점수는 : " +  totalScore + "입니다.");
 		System.out.println("슈의 데이트 결과는? : ");
@@ -91,5 +91,7 @@ public static void amusmentPart(Total total) {
 		
 		System.out.println("======================\r\n");
 		
+		
 	}
+
 }

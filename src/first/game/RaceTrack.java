@@ -2,10 +2,10 @@ package first.game;
 
 import java.util.Scanner;
 
-public class AmusmentPark {
-public static void amusmentPart(Total total) {
+public class RaceTrack {
+public static void raceTrack(Total total) {
 		
-   
+
 		int score1 = 0;
 		int score2 = 0;
 		int score3 = 0;
@@ -20,7 +20,7 @@ public static void amusmentPart(Total total) {
 		String[] prop = {"부채", "스키장갑", "튜브", "솜사탕", "레이싱글러브"};
 		
 		
-		System.out.println("슈의 놀이공원 데이트 의상을 뽑아주세요.");
+		System.out.println("슈의 레이싱장 데이트 의상을 뽑아주세요.");
 		System.out.println("모든 선택은 '1'버튼으로 진행됩니다.");
 		
 		System.out.print("헤어스타일 : ");
@@ -29,13 +29,12 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (hair.length -1));
 			System.out.println("'" + hair[num] + "'이(가) 뽑혔습니다.");	
-			if (num == 3) {
+			if (num == 4) {
 				score1 = 25;
 			}else {
 				score1 = 10;
 			}
 		}
-	
 		
 		System.out.println("의상 :");
 		int no2 = sc.nextInt();
@@ -43,7 +42,7 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (clothes.length -1));
 			System.out.println("'" + clothes[num] + "'이(가) 뽑혔습니다.");
-			if (num == 3) {
+			if (num == 4) {
 				score2 = 25;
 			}else {
 				score2 = 10;
@@ -55,7 +54,7 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (shoes.length -1));
 			System.out.println("'" + shoes[num] + "'이(가) 뽑혔습니다.");
-			if (num == 3) {
+			if (num == 4) {
 				score3 = 25;
 			}else {
 				score3 = 10;
@@ -67,7 +66,7 @@ public static void amusmentPart(Total total) {
 			double random =Math.random();
 			int num=(int)(Math.random() * (prop.length -1));
 			System.out.println("'" + prop[num] + "'이(가) 뽑혔습니다.");
-			if (num == 3) {
+			if (num == 4) {
 				score4 = 25;
 			}else {
 				score4 = 10;
